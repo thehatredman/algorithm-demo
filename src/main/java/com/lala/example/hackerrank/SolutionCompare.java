@@ -32,7 +32,8 @@ class ResultCompareAAndB {
                 bPoint++;
             }
         }
-        results.add(aPoint, bPoint);
+        results.add(aPoint);
+        results.add(bPoint);
         return results;
     }
 }
@@ -51,6 +52,11 @@ public class SolutionCompare {
                 .collect(toList());
 
         List<Integer> result = ResultCompareAAndB.compareTriplets(a, b);
+
+        System.out.println(result.stream()
+                .map(Object::toString)
+                .collect(joining(" "))
+                + "\n");
 
         bufferedWriter.write(
                 result.stream()

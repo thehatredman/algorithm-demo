@@ -20,6 +20,8 @@ public class SolutionAddArrayInt {
 
         int result = Result.simpleArraySum(ar);
 
+        System.out.println(result);
+
         bufferedWriter.write(String.valueOf(result));
         bufferedWriter.newLine();
 
