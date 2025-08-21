@@ -18,7 +18,7 @@ public class SolutionAddArrayInt {
                 .map(Integer::parseInt)
                 .collect(toList());
 
-        int result = Result.simpleArraySum(ar);
+        int result = Result1.simpleArraySum(ar);
 
         System.out.println(result);
 
@@ -30,7 +30,7 @@ public class SolutionAddArrayInt {
     }
 }
 
-class Result {
+class Result1 {
 
     /*
      * Complete the 'simpleArraySum' function below.
