@@ -1,4 +1,4 @@
-package com.lala.example.spoj;
+package com.lala.example.spoj.a_warmup;
 
 import java.util.ArrayList;
 import java.util.List;
