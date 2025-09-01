@@ -5,18 +5,22 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * FDEC - DEC
+ */
 public class DecryptByReadPrimeNumber {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String next = scanner.next();
+//        String next = "khemljpm"; // 12345678 -> 2357 = help
         String[] split = next.split("");
         int length = split.length;
 
-        List<Integer> basePrimes = generateBasePrimes((int) Math.sqrt(length) + 1);
+        List<Integer> basePrimes = generateBasePrimes((int) Math.sqrt(1000000) + 1);
 
         StringBuilder out = new StringBuilder();
         for (int i = 0; i <= length; i++) {
-            if (basePrimes.contains(i)) {
+            if (basePrimes.contains(i + 1)) {
                 out.append(split[i]);
             }
         }
