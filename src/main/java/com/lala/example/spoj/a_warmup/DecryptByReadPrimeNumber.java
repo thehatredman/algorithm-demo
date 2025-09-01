@@ -16,7 +16,8 @@ public class DecryptByReadPrimeNumber {
         String[] split = next.split("");
         int length = split.length;
 
-        List<Integer> basePrimes = generateBasePrimes((int) Math.sqrt(1000000) + 1);
+        List<Integer> basePrimes = generateBasePrimes(length + 1);
+//        List<Integer> basePrimes = generateBasePrimes((int) Math.sqrt(1000000) + 1);
 
         StringBuilder out = new StringBuilder();
         for (int i = 0; i <= length; i++) {
