@@ -27,15 +27,22 @@ public class TreasurePicker {
     }
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        n = scanner.nextInt();
+//        Scanner scanner = new Scanner(System.in);
+//        n = scanner.nextInt();
+//
+//        a = new int[n][n];
+//        for (int i = 0; i < n; i++) {
+//            for (int j = 0; j < n; j++) {
+//                a[i][j] = scanner.nextInt();
+//            }
+//        }
 
-        a = new int[n][n];
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                a[i][j] = scanner.nextInt();
-            }
-        }
+//        unit test
+        a = new int[][]{
+                {10, 2, 3},
+                {4, 15, 6},
+                {7, 8, 9}
+        };
 
         n = a.length;
         dp = new int[n][1 << n];
