@@ -8,8 +8,8 @@ import java.util.*;
 
 public class TreasurePicker {
     static int n;
-    static int[][] a;
-    static int[][] dp;
+    static int[][] a; // array input
+    static int[][] dp; // array mask luu ket qua
 
     public static int solve(int row, int mask) {
         if (row == n) return 0;
