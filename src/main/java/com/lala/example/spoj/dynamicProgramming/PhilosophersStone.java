@@ -5,7 +5,7 @@ import java.util.*;
 
 public class PhilosophersStone {
     public static void main(String[] args) throws IOException {
-        // Đọc file input
+        // read file input
         File file = new File("src/main/java/com/lala/example/spoj/dynamicProgramming/input.txt");
         Scanner sc = new Scanner(file);
 
